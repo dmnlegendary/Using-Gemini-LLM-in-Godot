@@ -7,3 +7,25 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=881749657]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="API_key_INPUT" type="LineEdit" parent="VBoxContainer" unique_id=1592585190]
+layout_mode = 2
+
+[node name="Prompt_INPUT" type="TextEdit" parent="VBoxContainer" unique_id=1274120621]
+layout_mode = 2
+
+[node name="SendButton" type="Button" parent="VBoxContainer" unique_id=535593893]
+layout_mode = 2
+
+[node name="Response_OUTPUT" type="TextEdit" parent="VBoxContainer" unique_id=803771719]
+layout_mode = 2
+
+[node name="HTTPRequest" type="HTTPRequest" parent="VBoxContainer" unique_id=59469025]
