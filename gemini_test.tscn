@@ -18,9 +18,13 @@ grow_vertical = 2
 
 [node name="API_key_INPUT" type="LineEdit" parent="VBoxContainer" unique_id=1592585190]
 layout_mode = 2
+placeholder_text = "Paste Gemini API key here"
+secret = true
 
 [node name="Prompt_INPUT" type="TextEdit" parent="VBoxContainer" unique_id=1274120621]
 layout_mode = 2
+theme_override_font_sizes/font_size = 16
+placeholder_text = "Enter your prompt here..."
 
 [node name="SendButton" type="Button" parent="VBoxContainer" unique_id=535593893]
 layout_mode = 2
