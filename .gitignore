@@ -7,3 +7,8 @@ API_key.txt
 
 # This file is not required for the project to run, this is downloaded in-game engine so no reason to be in github
 export_presets.cfg
+
+# All executables go on releases tab
+*.exe
+*.x86_32
+*.x86_64
