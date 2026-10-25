@@ -2,5 +2,8 @@
 .godot/
 /android/
 
-# Access to API key
+# Access to API key (you don't need this file it only works to copy n paste my own key quickly
 API_key.txt
+
+# This file is not required for the project to run, this is downloaded in-game engine so no reason to be in github
+export_presets.cfg

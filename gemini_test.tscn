@@ -31,11 +31,20 @@ layout_mode = 2
 placeholder_text = "Paste Gemini API key here"
 secret = true
 
+[node name="Model_Version" type="LineEdit" parent="MarginContainer/VBoxContainer" unique_id=1920783367]
+layout_mode = 2
+placeholder_text = "Type the exact model version from gemini that you want to use (By default it's loaded with \"gemini-3.8-flash\" but you can load and check what versions you can use)"
+
 [node name="Prompt_INPUT" type="TextEdit" parent="MarginContainer/VBoxContainer" unique_id=1274120621]
 custom_minimum_size = Vector2(100, 200)
 layout_mode = 2
 theme_override_font_sizes/font_size = 16
 placeholder_text = "Enter your prompt here..."
+
+[node name="WatchModelsAvailable" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1732298415]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Press here to watch models available for your API"
 
 [node name="SendButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=535593893]
 layout_mode = 2
@@ -46,7 +55,11 @@ text = "Send prompt"
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_vertical = 3
+placeholder_text = "Here goes any respond or error you might get while using this little project. If you wish you are completely free to integrate it to any project as you need without credit me or something long live to Open Source Tools :D"
 editable = false
 wrap_mode = 1
 
 [node name="HTTPRequest" type="HTTPRequest" parent="MarginContainer/VBoxContainer" unique_id=59469025]
+
+[connection signal="text_changed" from="MarginContainer/VBoxContainer/Model_Version" to="." method="_on_model_version_text_changed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/WatchModelsAvailable" to="." method="_on_watch_models_available_pressed"]
